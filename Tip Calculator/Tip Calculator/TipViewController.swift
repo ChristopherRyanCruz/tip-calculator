@@ -18,12 +18,24 @@ class TipViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    }
+
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+        loadDefaultTipIndex()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func loadDefaultTipIndex() {
+        var defaults = NSUserDefaults.standardUserDefaults()
+        var indexValue = defaults.valueForKey("tipIndex")?.integerValue
+        if (indexValue != nil ) {
+            tipPercentControl.selectedSegmentIndex = indexValue!
+        }
     }
     
     @IBAction func totalChanged(sender: AnyObject) {
@@ -46,6 +58,7 @@ class TipViewController: UIViewController {
         var totalAmount = NSString(string: billTotal).doubleValue + tipAmount
         tipLabel.text = String(format: "$%.2f",  tipAmount)
         totalLabel.text = String(format: "$%.2f",  totalAmount)
+        SettingsManager.sharedSettingsManager().setTipIndex(tipPercentControl.selectedSegmentIndex)
     }
     
     func updateTotal () {

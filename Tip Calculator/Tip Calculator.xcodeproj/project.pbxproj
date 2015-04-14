@@ -13,6 +13,8 @@
 		9DFF30481ADCED7A00645C74 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DFF30471ADCED7A00645C74 /* Images.xcassets */; };
 		9DFF304B1ADCED7A00645C74 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DFF30491ADCED7A00645C74 /* LaunchScreen.xib */; };
 		9DFF30571ADCED7B00645C74 /* Tip_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFF30561ADCED7B00645C74 /* Tip_CalculatorTests.swift */; };
+		9DFF30611ADD95F800645C74 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFF30601ADD95F800645C74 /* SettingsViewController.swift */; };
+		9DFF30631ADD9BA700645C74 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFF30621ADD9BA700645C74 /* SettingsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		9DFF30501ADCED7B00645C74 /* Tip CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tip CalculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DFF30551ADCED7B00645C74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DFF30561ADCED7B00645C74 /* Tip_CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip_CalculatorTests.swift; sourceTree = "<group>"; };
+		9DFF30601ADD95F800645C74 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		9DFF30621ADD9BA700645C74 /* SettingsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 			children = (
 				9DFF30401ADCED7A00645C74 /* AppDelegate.swift */,
 				9DFF30421ADCED7A00645C74 /* TipViewController.swift */,
+				9DFF30601ADD95F800645C74 /* SettingsViewController.swift */,
+				9DFF30621ADD9BA700645C74 /* SettingsManager.swift */,
 				9DFF30441ADCED7A00645C74 /* Main.storyboard */,
 				9DFF30471ADCED7A00645C74 /* Images.xcassets */,
 				9DFF30491ADCED7A00645C74 /* LaunchScreen.xib */,
@@ -212,8 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DFF30631ADD9BA700645C74 /* SettingsManager.swift in Sources */,
 				9DFF30431ADCED7A00645C74 /* TipViewController.swift in Sources */,
 				9DFF30411ADCED7A00645C74 /* AppDelegate.swift in Sources */,
+				9DFF30611ADD95F800645C74 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
